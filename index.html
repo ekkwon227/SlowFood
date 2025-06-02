@@ -39,7 +39,139 @@ Released under the MIT license: http://jsbin.mit-license.org
             border-radius: 5px;
             margin-bottom: 20px;
         }
-        .serving름cipe Book</h1>
+        .serving-control {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 15px 0;
+            padding: 10px;
+            background: #e8f4fd;
+            border-radius: 5px;
+        }
+        .serving-btn {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .serving-btn:hover {
+            background: #2980b9;
+        }
+        .current-serving {
+            font-weight: bold;
+            font-size: 18px;
+            margin: 0 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        .timer-section {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .timer-controls {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 10px 0;
+        }
+        .timer-input {
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+        .timer-btn {
+            background: #e67e22;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .timer-btn:hover {
+            background: #d35400;
+        }
+        .timer-display {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 10px 0;
+            color: #e67e22;
+        }
+        .steps-section {
+            margin: 20px 0;
+        }
+        .step {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            margin: 5px 0;
+            background: #f8f9fa;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+        }
+        .step.completed {
+            background: #d4edda;
+            border-left-color: #28a745;
+            opacity: 0.7;
+        }
+        .step-checkbox {
+            margin-right: 10px;
+            transform: scale(1.2);
+        }
+        .step-text {
+            flex: 1;
+        }
+        .step.completed .step-text {
+            text-decoration: line-through;
+        }
+        .save-section {
+            text-align: center;
+            margin: 30px 0;
+            padding: 20px;
+            background: #e8f5e8;
+            border-radius: 5px;
+        }
+        .save-btn {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .save-btn:hover {
+            background: #218838;
+        }
+        .source {
+            text-align: center;
+            margin-top: 20px;
+            color: #6c757d;
+            font-style: italic;
+        }
+        img {width:100%;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>홍길동's Recipe Book</h1>
         <img src="food1.jpeg">
         <div class="recipe-header">
             <h2>Recipe #1 : 비빔밥</h2>
